@@ -264,7 +264,7 @@ export class CreditCard {
   }
 
   public static formatExpiry(expiry) {
-    let parts = expiry.match(/^\D*(\d{1,2})(\D+)?(\d{1,4})?/),
+    let parts = expiry.match(/^\D*(\d{1,2})(\D+)?(\d{1,2})?/),
         mon,
         sep,
         year;
