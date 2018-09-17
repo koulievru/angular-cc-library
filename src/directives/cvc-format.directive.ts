@@ -32,7 +32,7 @@ export class CvcFormatDirective {
   private reformatCvc(e) {
     setTimeout(() => {
       let val = CreditCard.replaceFullWidthChars(this.target.value);
-      val = val.replace(/\D/g, '').slice(0, 4);
+      val = val.replace(/\D/g, '').slice(0, 3);
       this.target.selectionStart = this.target.selectionEnd = CreditCard.safeVal(val, this.target);
     });
   }
